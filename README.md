@@ -29,6 +29,7 @@ To evaluate an existing biencoder, run `python biencoder.py --data-path $path_to
 
 
 ## Datasets
+Due to GitHub's limitation on file upload size, we cannot upload files completely.
 The training set, development set, and test set can be found at this address [here](http://lcl.uniroma1.it/wsdeval/home).
 
 
