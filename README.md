@@ -27,8 +27,6 @@ It is recommended you train this model using the `--multigpu` flag to enable mod
 
 To evaluate an existing biencoder, run `python biencoder.py --data-path $path_to_wsd_data --ckpt $path_to_model_checkpoint --eval --split $wsd_eval_set`. Without `--split`, this defaults to evaluating on the development set, semeval2007. The model weights and predictions for the biencoder reported in the paper can be found [here](https://drive.google.com/file/d/1NZX_eMHQfRHhJnoJwEx2GnbnYIQepIQj).
 
-Similar commands can be used to run the frozen probe for WSD (`frozen_pretrained_encoder.py`) and the finetuning a pretrained, single encoder classifier for WSD (`finetune_pretrained_encoder.py`).
-
 
 ## Citation
 The paper is not published, until the paper is included, we will be the first time to update the reference method.
