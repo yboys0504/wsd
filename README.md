@@ -12,7 +12,7 @@ Word Sense Disambiguation (WSD) is a basic task of Natural Language Processing (
 To run this code, you'll need the following libraries:
 * [Python 3](https://www.python.org/)
 * [Pytorch 1.2.0](https://pytorch.org/)
-* [Transformers 1.1.0](https://github.com/huggingface/transformers)
+* [Transformers 4.5.1](https://github.com/huggingface/transformers)
 * [Numpy 1.17.2](https://numpy.org/)
 * [NLTK 3.4.5](https://www.nltk.org/)
 * [tqdm](https://tqdm.github.io/)
