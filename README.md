@@ -28,6 +28,12 @@ It is recommended you train this model using the `--multigpu` flag to enable mod
 To evaluate an existing biencoder, run `python biencoder.py --data-path $path_to_wsd_data --ckpt $path_to_model_checkpoint --eval --split $wsd_eval_set`. Without `--split`, this defaults to evaluating on the development set, semeval2007. The model weights and predictions for the biencoder reported in the paper can be found [here](https://drive.google.com/file/d/1NZX_eMHQfRHhJnoJwEx2GnbnYIQepIQj).
 
 
+## Model Running Screenshot
+Here, we display the running process of the model, with the specific parameter settings of the model at the top of the screen (the same as the results published in the paper).
+![模型运行截屏](https://github.com/yboys0504/wsd/blob/main/a1.png)
+![模型运行截屏](https://github.com/yboys0504/wsd/blob/main/a2.png)
+
+
 ## Datasets
 Due to GitHub's limitation on file upload size, we cannot upload files completely.
 The training set, development set, and test set can be found at this address [here](http://lcl.uniroma1.it/wsdeval/home).
