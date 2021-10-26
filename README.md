@@ -20,6 +20,17 @@ To run this code, you'll need the following libraries:
 We used the [WSD Evaluation Framework](http://lcl.uniroma1.it/wsdeval/) for training and evaluating our model.
 
 
+## Description of files and folders
+<b>biencoder.py</b> is the main file of the model and the interface for program execution.
+<b>get_wn30.py</b> is a program file for obtaining the meaning of words in WordNet 3.0.
+
+<b>wsd_models</b> folder contains two files, namely <b>util.py</b> and <b>models.py</b>. models.py is the main model of the program, which is called by biencoder.py; util.py is the extracted public method.
+
+<b>data</b> folder contains training data sets, evaluation data sets and development data sets. Its structure is the same as that of the publisher of the dataset [here](http://lcl.uniroma1.it/wsdeval/home).
+
+<b>ckpt</b> folder is the model parameter data saved during the running of the program, and our pre-trained model is also saved in this directory. But because Github has requirements on the size of the uploaded file, we published it to Google Drive, and the specific address is given in this folder.
+
+
 ## How to Run 
 To train a biencoder model, run `python biencoder.py --data-path $path_to_wsd_data --ckpt $path_to_checkpoint`. The required arguments are: `--data-path`, which is the filepath to the top-level directory of the WSD Evaluation Framework; and `--ckpt`, which is the filepath of the directory to which to save the trained model checkpoints and prediction files. The `Scorer.java` in the WSD Framework data files needs to be compiled, with the `Scorer.class` file in the original directory of the Scorer file.
 
