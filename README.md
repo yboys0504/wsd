@@ -37,8 +37,7 @@ We used the [WSD Evaluation Framework](http://lcl.uniroma1.it/wsdeval/) for trai
 ## How to Run 
 To train a biencoder model, run `python biencoder.py --data-path $path_to_wsd_data --ckpt $path_to_checkpoint`. The required arguments are: `--data-path`, which is the filepath to the top-level directory of the WSD Evaluation Framework; and `--ckpt`, which is the filepath of the directory to which to save the trained model checkpoints and prediction files. The `Scorer.java` in the WSD Framework data files needs to be compiled, with the `Scorer.class` file in the original directory of the Scorer file.
 
-<b>For example:</b>
-<br>python3 biencoder.py --ckpt ckpt --data-path data --multigpu
+<b>For example:</b> python3 biencoder.py --ckpt ckpt --data-path data --multigpu
 
 
 
@@ -46,8 +45,7 @@ It is recommended you train this model using the `--multigpu` flag to enable mod
 
 To evaluate an existing biencoder, run `python biencoder.py --data-path $path_to_wsd_data --ckpt $path_to_model_checkpoint --eval --split $wsd_eval_set`. Without `--split`, this defaults to evaluating on the development set, semeval2007. The model weights and predictions for the biencoder reported in the paper can be found [here](https://drive.google.com/file/d/1NZX_eMHQfRHhJnoJwEx2GnbnYIQepIQj).
 
-<b>For example:</b>
-<br>python3 biencoder.py --ckpt ckpt --data-path data --eval --split senseval2 --multigpu
+<b>For example:</b> python3 biencoder.py --ckpt ckpt --data-path data --eval --split senseval2 --multigpu
 
 
 
