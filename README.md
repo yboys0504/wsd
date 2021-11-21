@@ -1,11 +1,13 @@
-# Fighting Against the Long Tail of Word Sense Disambiguation Inspired by Children's Literacy Behavior
+# Bi-Matching Mechanism to Combat the Long Tail of Word Sense Disambiguation
+
+
 
 Word Sense Disambiguation (WSD) is to predict the sense of the target word in a given context.
 
 
 ![模型结构图](https://github.com/yboys0504/wsd/blob/main/model.png)
 
-Word Sense Disambiguation (WSD) is a basic task of Natural Language Processing (NLP), and high-accuracy word sense recognition has a positive effect on subsequent language understanding tasks. However, due to the long tail phenomenon of word sense distribution, pre-trained language models trained on general or public datasets will seriously underestimate low-frequency senses (LFSs), which makes it difficult to correct the existing deviations in the subsequent fine-tuning stage. This paper proposes a bi-encoder model, simulating the literacy behavior of children and fully employing glosses and example sentences in a dictionary (i.e., WordNet), to improve the recognition rate of the pre-trained model for LFS in the WSD task. Specifically, we employ one of the encoders to construct the conceptual system of the word and the other to learn its applicable scenario and determine the sense of the word in a given context through the double matching of the conceptual system and the applicable scenario. The experiment is carried out under the WSD evaluation framework proposed by Raganato (2017), and our model outperforms the previous state-of-the-art models. Moreover, our model has reached a new height in the performance of high-frequency senses.
+The long tail phenomenon of word sense distribution in linguistics causes the Word Sense Disambiguation (WSD) task to face a serious polarization of word sense distribution, that is, Most Frequent Senses (MFSs) with huge sample sizes and Long Tail Senses (LTSs) with small sample sizes. The single matching mechanism model that does not distinguish between the two senses will cause LTSs to be ignored because LTSs are in a weak position. The few-shot learning method that mainly focuses on LTSs is not conducive to grasping the advantage of easy identification of MFSs. This paper proposes a bi-matching mechanism to serve the WSD model to deal with two kinds of senses in a targeted manner, namely definition matching and collocation feature matching. The experiment is carried out under the evaluation framework of English all-words WSD and is better than the baseline models. Moreover, state-of-the-art performance is achieved through data enhancement.
 
 
 
