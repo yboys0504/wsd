@@ -70,5 +70,5 @@ The paper is not published, until the paper is included, we will be the first ti
 
 
 ## Contact
-Please address any questions or comments about this codebase to junwei@tju.edu.cn.
+
 
